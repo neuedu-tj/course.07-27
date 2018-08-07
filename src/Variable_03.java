@@ -1,10 +1,11 @@
+import java.math.BigDecimal;
+
 public class Variable_03 {
 
 
     public static void main(String[] args) {
 
         //不要用  double / float 做货币运算或其他商业运算 .. . . .
-
         float d1 = 123.45f;
         float  d2 = 123.1f;
         double d3 = 123.45;
