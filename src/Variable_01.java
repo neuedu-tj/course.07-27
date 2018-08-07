@@ -3,12 +3,11 @@ public class Variable_01 {
 
     public static void main(String[] args) {
 
+        int a  = 14 ;
 
-       float a = 128.1f;
-       int b = (int)a;
-
-
-        System.out.println(b);
+        System.out.println(Integer.toOctalString(a));
+        System.out.println(Integer.toBinaryString(a));
+        System.out.println(Integer.toHexString(a));
 
     }
 
