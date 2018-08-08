@@ -1,6 +1,8 @@
 package com.neuedu.array;
 
 
+import com.sun.istack.internal.NotNull;
+
 public class Array_02 {
 
 
@@ -21,7 +23,7 @@ public class Array_02 {
     }
 
     //引用类型  传地址
-    static void add2(int[] b) {
+    static void add2(@NotNull  int[] b) {
         b[0] = b[0]+1;
     }
 
