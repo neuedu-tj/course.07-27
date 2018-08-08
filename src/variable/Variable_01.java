@@ -1,3 +1,5 @@
+package variable;
+
 public class Variable_01 {
 
 

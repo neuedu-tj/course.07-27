@@ -1,3 +1,5 @@
+package variable;
+
 import java.math.BigDecimal;
 
 public class Variable_03 {

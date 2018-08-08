@@ -1,3 +1,5 @@
+package start;
+
 import java.util.Date;
 import java.util.Scanner;
 

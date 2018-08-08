@@ -1,3 +1,5 @@
+package method;
+
 import java.util.Date;
 
 public class Method_02 {
