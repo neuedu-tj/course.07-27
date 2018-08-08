@@ -1,4 +1,4 @@
-package condition;
+package branch.condition;
 
 import java.util.Scanner;
 
