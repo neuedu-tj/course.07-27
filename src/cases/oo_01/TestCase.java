@@ -20,6 +20,8 @@ public class TestCase {
 
         jack.setAddr(addrs1);
 
+
+
         ////////////////////////////
         //构造 伴侣
 
@@ -37,21 +39,28 @@ public class TestCase {
 
         rose.setAddr(addrs2);
 
+//        rose.setMarried(true);
+
+        //女朋友 *2
+
+        Person lisa = new Person();
+        lisa.setName("lisa");
+        Person deanna = new Person();
+        deanna.setName("deanna");
+
+        Person[] gfs = {lisa , deanna};
+
+        jack.setGf(gfs);
 
 
-        //结婚登记
-
-        jack.setDuixiang(rose);
-        rose.setDuixiang(jack);
-
-//        System.out.println( rose.toString() );
 
 
-
-        //查看 rose 的  老公 ?
-
-        System.out.println( "rose 的老公 :  " + rose.getDuixiang().getName());
-        System.out.println( "rose 的老公 :  " + rose.getDuixiang().getAddr()[1].getDetail());
+        if( jack.isIllegality(rose)) {
+            jack.setDuixiang(rose);
+            rose.setDuixiang(jack);
+        } else {
+            System.out.println("施主 : 你缘分未到 ...   再忍忍 ...");
+        }
 
 
 

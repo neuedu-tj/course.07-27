@@ -21,6 +21,37 @@ public class Person {
     private Person duixiang;
 
 
+    //提供检查方法
+    public boolean isIllegality(Person person) {
+
+        Person self = this;
+        Person target = person;
+
+        boolean flag_self = false;
+        boolean flag_target = false;
+
+        if(!self.isMarried && (self.getGf()==null || self.getGf().length <1 ) ) {
+            flag_self = true;
+        }
+
+        if(!target.isMarried && (target.getGf()==null || target.getGf().length <1 ) ) {
+            flag_target = true;
+        }
+
+        if(!flag_self) {
+            System.out.println(self.getName()+"不靠谱");
+            return flag_self;
+        } else if( !flag_target) {
+            System.out.println(target.getName()+" 不靠谱");
+            return flag_target;
+        } else {
+            System.out.println("百年修得同船渡 ，千年修得共枕眠 , 恭喜新人 . ");
+            return true;
+        }
+
+
+    }
+
 
     //提供结婚的方法.
 
