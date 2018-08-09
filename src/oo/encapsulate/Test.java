@@ -1,4 +1,4 @@
-package oo.封装;
+package oo.encapsulate;
 
 public class Test {
 
@@ -7,7 +7,6 @@ public class Test {
         Stu stu = new Stu();
 
         stu.setName("tomcat");
-
         System.out.println(stu.getName());
 
 

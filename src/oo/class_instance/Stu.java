@@ -1,4 +1,4 @@
-package oo.类_对象;
+package oo.class_instance;
 
 public class Stu {
 
