@@ -45,22 +45,26 @@ public class TestCase {
 
         Person lisa = new Person();
         lisa.setName("lisa");
-        Person deanna = new Person();
-        deanna.setName("deanna");
 
-        Person[] gfs = {lisa , deanna};
-
-        jack.setGf(gfs);
+        System.out.println(lisa.getGender());
 
 
-
-
-        if( jack.isIllegality(rose)) {
-            jack.setDuixiang(rose);
-            rose.setDuixiang(jack);
-        } else {
-            System.out.println("施主 : 你缘分未到 ...   再忍忍 ...");
-        }
+//        Person deanna = new Person();
+//        deanna.setName("deanna");
+//
+//        Person[] gfs = {lisa , deanna};
+//
+//        jack.setGf(gfs);
+//
+//
+//
+//
+//        if( jack.isIllegality(rose)) {
+//            jack.setDuixiang(rose);
+//            rose.setDuixiang(jack);
+//        } else {
+//            System.out.println("施主 : 你缘分未到 ...   再忍忍 ...");
+//        }
 
 
 
