@@ -7,8 +7,8 @@ public class Dog extends  Animal {
 
     private String color;
 
-//    @Override
-//    public void sayHello() {
-//        System.out.println("wang wang wang ");
-//    }
+    @Override
+    public void sayHello() {
+        System.out.println("wang wang wang ");
+    }
 }
