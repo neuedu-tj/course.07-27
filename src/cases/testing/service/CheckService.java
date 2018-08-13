@@ -21,6 +21,7 @@ public class CheckService {
 
 	private int score;  //总分  .
 
+	//判卷子 必须和  question , answer 具备 强聚合(组合) 关系
 	public CheckService(Question[] questions , Answer[] answers) { //组合
 		this.questions = questions;
 		this.answers = answers;

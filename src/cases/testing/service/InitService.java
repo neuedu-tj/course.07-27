@@ -7,7 +7,7 @@ import cases.testing.question.ChoiceQuestion;
 import cases.testing.question.Question;
 import cases.testing.question.support.Option;
 
-public class InvokeService {
+public class InitService {
 
 	//所有的考试题
 	private Question[] questions;
@@ -20,6 +20,7 @@ public class InvokeService {
 	private int blankItemAmount;
 
 	public Question[] getQuestions() {
+
 		return questions;
 	}
 

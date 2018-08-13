@@ -6,7 +6,7 @@ import cases.testing.answer.ChoiceAnswer;
 import cases.testing.question.*;
 import cases.testing.question.support.Option;
 import cases.testing.service.CheckService;
-import cases.testing.service.InvokeService;
+import cases.testing.service.InitService;
 
 public class TestCase {
 
@@ -52,21 +52,19 @@ public class TestCase {
         /////////////// 题目
         Question[] questions = { s1 , m1 , b1 , b2};
 
+        //试卷初始化
+        InitService invoke = new InitService();
+        invoke.init(questions);
+
+        System.out.println("开始答题");
         ///////////
         // 答案
         Answer answer1 = new ChoiceAnswer(new char[] {'D'});
         Answer answer2 = new ChoiceAnswer(new char[] {'B' , 'A' });
-        String[] contents1 = {"get" , "post"};
-        String[] contents2 = {"封装" , "继承" , "多a态" };
-        Answer answer3 = new BlankAnswer(contents1);
-        Answer answer4 = new BlankAnswer(contents2);
+        Answer answer3 = new BlankAnswer("get" , "post");
+        Answer answer4 = new BlankAnswer("封装" , "继承" , "多态");
 
         Answer[] answers = {answer1 , answer2 , answer3 , answer4};
-
-
-        //试卷初始化
-        InvokeService invoke = new InvokeService();
-        invoke.init(questions);
 
         System.out.println(" \n开始判卷\n  ");
 
