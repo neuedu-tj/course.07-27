@@ -16,17 +16,18 @@ public class TestCase {
 		
 		String str = sbf.toString();
 		System.out.println(str);
+
 		
 		BigDecimal b1 = new BigDecimal("1000");
 		BigDecimal b2 = new BigDecimal("1000");
 		BigDecimal result = b1.add(b2);
+
 		NumberFormat ins = NumberFormat.getCurrencyInstance();
-		ins.setCurrency(Currency.getInstance(Locale.US));
+
+		ins.setCurrency(Currency.getInstance(Locale.CHINA));
 
 		System.out.println(ins.format(result));
 		System.out.println(result);
-
-		
 	
 	}
 
