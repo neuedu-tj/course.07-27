@@ -22,4 +22,6 @@ public class Stu implements Comparable<Stu> {
         else if (s1.getScore()<s2.getScore()) return 1;
         else return 0;
     }
+
+
 }
