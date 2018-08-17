@@ -1,4 +1,4 @@
-package collection.list;
+package collection.list.arraylist;
 
 import collection.list.support.Stu;
 
