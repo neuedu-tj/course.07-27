@@ -1,5 +1,8 @@
 package collection.set;
 
+import lombok.extern.java.Log;
+
+@Log
 public class Emp implements  Comparable<Emp>{
 
     private int eid;
@@ -38,6 +41,7 @@ public class Emp implements  Comparable<Emp>{
 
     @Override
     public int hashCode() {
+        log.info("hashCode");
         int result;
         long temp;
         result = eid;
@@ -50,6 +54,7 @@ public class Emp implements  Comparable<Emp>{
 
     @Override
     public boolean equals(Object obj) {
+        log.info("equals");
         return true;
     }
 

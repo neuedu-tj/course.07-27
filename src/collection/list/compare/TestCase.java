@@ -2,6 +2,7 @@ package collection.list.compare;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class TestCase {
 
@@ -20,7 +21,9 @@ public class TestCase {
         stus.add(s4);
         stus.add(s5);
 
-        Collections.sort(stus);
+        Comparator c = new StuCompare();
+
+        Collections.sort(stus , c);
 
         for (Stu s : stus  ) {
             System.out.println(s);

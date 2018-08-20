@@ -34,6 +34,7 @@ public class TestCase_01 {
 //        }
 
 
+        //Entry 接口 ,
             Iterator<Map.Entry<Integer ,Object>> mapIter = maps.entrySet().iterator();
             while(mapIter.hasNext()) {
                 Map.Entry<Integer , Object > elements =  mapIter.next();
